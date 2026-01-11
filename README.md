@@ -28,7 +28,7 @@ Custom  LLaVA-style Vision-Language Model
 •	Licensing constraints
 •	Hallucination control
 
-### (B) Architecture Design
+## (B) Architecture Design
  High-Level Pipeline
  PCB Image
 ↓
@@ -69,12 +69,12 @@ To meet real-time industrial constraints, the following optimizations are applie
 •	Consistency loss during training
 •	Confidence-score thresholding
 ## (E) Training Strategy
-# Stage 1: Vision Encoder Training
+#### Stage 1: Vision Encoder Training
 •	Train CNN on PCB images + bounding boxes
 •	Objective: Accurate localization
-# Stage 2: QA Pair Generation
+#### Stage 2: QA Pair Generation
 •	Auto-generate QA pairs from annotations
-# Stage 3: VLM Fine-Tuning
+#### Stage 3: VLM Fine-Tuning
 •	Input: Image + Question
 •	Output: Structured JSON response
 ### Data Augmentation:
